@@ -1,6 +1,177 @@
+/*
+    MARK: Shared
+*/
 * {
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
+    text-transform: lowercase;
+}
+
+body {
+    height: 100vh;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 600;
+}
+
+footer {
+    margin-top: 128px;
+}
+
+footer p {
+    text-align: right;
+    padding-right: 8px;
+    padding-bottom: 8px;
+}
+
+/*
+    MARK: Scrollbar
+*/
+/* For WebKit browsers */
+::-webkit-scrollbar {
+    width: 32px; /* Width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Background of the scrollbar track */
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888; /* Color of the scrollbar thumb */
+    border-radius: 6px; /* Rounded corners for the scrollbar thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Color of the scrollbar thumb on hover */
+}
+
+/* For Firefox */
+html {
+    scrollbar-width: 32px; /* Width of the scrollbar */
+    scrollbar-color: #888 #f1f1f1; /* Color of the scrollbar thumb and track */
+}
+
+/*
+    MARK: My Links
+*/
+#mylinks {
+    margin: 0;
+    color: whitesmoke;
+    background-image: url(./assets/bgTile.jpg);
+    background-size: cover;
+}
+
+#mylinks > article {
+    width: 50%;
+    min-width: 300px;
+    margin: auto;
+    padding-top: 32px;
+}
+
+#mylinks #intro {
+    margin-bottom: 32px;
+}
+
+#mylinks #intro > img {
+    width: 16%;
+    min-width: 264px;
+    margin: auto;
+    display: block;
+    padding-bottom: 32px;
+}
+
+#mylinks h1 {
+    text-align: center;
+    font-size: 4.5em;
+}
+
+#mylinks h2 {
+    font-size: 2.5em;
+}
+
+.links h2 {
+    padding-bottom: 16px;
+}
+
+.links ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.links ul li {
+    padding-bottom: 16px;
+}
+
+.links ul li a {
+    color: black;
+    fill: black;
+    text-decoration: none;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    min-height: 64px;
+    padding: 16px;
+    font-size: 1.5em;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.links ul li.youtube a {
+    color: whitesmoke;
+    fill: whitesmoke;
+    background-color: #ff0000;
+}
+
+.links ul li.instagram a {
+    color: whitesmoke;
+    fill: whitesmoke;
+    background-color: #f00075;
+}
+
+.links ul li.twitter a {
+    color: whitesmoke;
+    fill: whitesmoke;
+    background-color: #1d9bf0;
+}
+
+.links ul li a:hover {
+    color: whitesmoke;
+    fill: whitesmoke;
+    background-color: black;
+}
+
+.links ul li a svg, .links ul li a img {
+    width: 64px;
+    height: 64px;
+    margin-right: 16px;
+    border-radius: 8px;
+}
+
+.links ul li a:hover img {
+    filter: grayscale(100%);
+}
+
+@media screen and (max-width: 500px) {
+    .links ul li a img {
+        width: 128px;
+        height: 128px;
+    }
+}
+
+@media screen and (max-width: 1000px) and (min-width: 760px) {
+    #mylinks > article {
+        width: 75%;
+    }
 }
