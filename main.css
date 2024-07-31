@@ -9,6 +9,10 @@
     text-transform: lowercase;
 }
 
+body {
+    height: 100vh;
+}
+
 h1, h2, h3, h4, h5, h6, p {
     margin: 0;
 }
@@ -57,7 +61,6 @@ html {
 /*
     MARK: My Links
 */
-
 #mylinks {
     margin: 0;
     color: whitesmoke;
@@ -67,7 +70,7 @@ html {
 
 #mylinks > article {
     width: 50%;
-    min-width: 882px;
+    min-width: 300px;
     margin: auto;
     padding-top: 32px;
 }
@@ -78,7 +81,7 @@ html {
 
 #mylinks #intro > img {
     width: 16%;
-    min-width: 420px;
+    min-width: 264px;
     margin: auto;
     display: block;
     padding-bottom: 32px;
@@ -113,7 +116,7 @@ html {
     text-decoration: none;
     background-color: whitesmoke;
     border-radius: 10px;
-    height: 64px;
+    min-height: 64px;
     padding: 16px;
     font-size: 1.5em;
 
@@ -158,4 +161,17 @@ html {
 
 .links ul li a:hover img {
     filter: grayscale(100%);
+}
+
+@media screen and (max-width: 500px) {
+    .links ul li a img {
+        width: 128px;
+        height: 128px;
+    }
+}
+
+@media screen and (max-width: 1000px) and (min-width: 760px) {
+    #mylinks > article {
+        width: 75%;
+    }
 }
