@@ -28,6 +28,33 @@ footer p {
 }
 
 /*
+    MARK: Scrollbar
+*/
+/* For WebKit browsers */
+::-webkit-scrollbar {
+    width: 32px; /* Width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Background of the scrollbar track */
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888; /* Color of the scrollbar thumb */
+    border-radius: 6px; /* Rounded corners for the scrollbar thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Color of the scrollbar thumb on hover */
+}
+
+/* For Firefox */
+html {
+    scrollbar-width: 32px; /* Width of the scrollbar */
+    scrollbar-color: #888 #f1f1f1; /* Color of the scrollbar thumb and track */
+}
+
+/*
     MARK: My Links
 */
 
@@ -122,8 +149,13 @@ footer p {
     background-color: black;
 }
 
-.links ul li a svg {
-    width: 42px;
-    height: 42px;
+.links ul li a svg, .links ul li a img {
+    width: 64px;
+    height: 64px;
     margin-right: 16px;
+    border-radius: 8px;
+}
+
+.links ul li a:hover img {
+    filter: grayscale(100%);
 }
