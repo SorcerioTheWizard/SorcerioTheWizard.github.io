@@ -160,6 +160,11 @@ html {
     fill: #FE2C55;
 }
 
+.links ul li.patreon svg {
+    color: #f96854;
+    fill: #f96854;
+}
+
 .links ul li a:hover {
     color: whitesmoke;
     fill: whitesmoke;
