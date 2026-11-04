@@ -31,6 +31,11 @@ footer p {
     padding-bottom: 8px;
 }
 
+::selection {
+  background-color: #5454fc;
+  color: whitesmoke;
+}
+
 /*
     MARK: Scrollbar
 */
@@ -64,8 +69,10 @@ html {
 #mylinks {
     margin: 0;
     color: whitesmoke;
-    background-image: url(./assets/bgTile.jpg);
-    background-size: cover;
+    background-image: url(./assets/c.png);
+    background-repeat: repeat;
+    background-position: top left;
+    background-size: auto;
 }
 
 #mylinks > article {
@@ -128,28 +135,35 @@ html {
     align-items: center;
 }
 
-.links ul li.youtube a {
-    color: whitesmoke;
-    fill: whitesmoke;
-    background-color: #ff0000;
+.links ul li.youtube svg {
+    color: #ff0000;
+    fill: #ff0000;
 }
 
-.links ul li.instagram a {
-    color: whitesmoke;
-    fill: whitesmoke;
-    background-color: #f00075;
+.links ul li.instagram svg {
+    color: #f00075;
+    fill: #f00075;
 }
 
-.links ul li.twitter a {
-    color: whitesmoke;
-    fill: whitesmoke;
-    background-color: #1d9bf0;
+.links ul li.twitter svg {
+    color: black;
+    fill: black;
+}
+
+.links ul li.github svg {
+    color: #0FBF3E;
+    fill: #0FBF3E;
+}
+
+.links ul li.tiktok svg {
+    color: #FE2C55;
+    fill: #FE2C55;
 }
 
 .links ul li a:hover {
     color: whitesmoke;
     fill: whitesmoke;
-    background-color: black;
+    background-color: #5454fc;
 }
 
 .links ul li a svg, .links ul li a img {
@@ -161,6 +175,11 @@ html {
 
 .links ul li a:hover img {
     filter: grayscale(100%);
+}
+
+.links ul li a:hover svg {
+    color: whitesmoke;
+    fill: whitesmoke;
 }
 
 @media screen and (max-width: 500px) {
